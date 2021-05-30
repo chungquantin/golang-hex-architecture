@@ -22,7 +22,7 @@ func main() {
 
 
 	dbDriver := os.Getenv("DB_DRIVER");
-	dbName := os.Getenv("DB_NAME")
+	dbName := os.Getenv("DS_NAME")
 
 	dbAdapter, err = db.NewDbAdapter(dbDriver, dbName);
 
