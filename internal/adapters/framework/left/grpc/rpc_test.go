@@ -82,7 +82,7 @@ func TestGetAddition(t *testing.T){
 	if err != nil {
 		t.Fatalf("expected: %v, got: %v",nil, err)
 	}
-	require.Equal(t, answer.Value, 2)
+	require.Equal(t, answer.Value, int32(2))
 }
 
 func TestGetSubstraction(t *testing.T){
@@ -101,7 +101,7 @@ func TestGetSubstraction(t *testing.T){
 	if err != nil {
 		t.Fatalf("expected: %v, got: %v",nil, err)
 	}
-	require.Equal(t, answer.Value, 0)
+	require.Equal(t, answer.Value, int32(0))
 }
 
 func TestGetMultiplication(t *testing.T){
@@ -120,7 +120,7 @@ func TestGetMultiplication(t *testing.T){
 	if err != nil {
 		t.Fatalf("expected: %v, got: %v",nil, err)
 	}
-	require.Equal(t, answer.Value, 4)
+	require.Equal(t, answer.Value, int32(4))
 }
 
 func TestGetDivision(t *testing.T){
@@ -139,5 +139,5 @@ func TestGetDivision(t *testing.T){
 	if err != nil {
 		t.Fatalf("expected: %v, got: %v",nil, err)
 	}
-	require.Equal(t, answer.Value, 1)
+	require.Equal(t, answer.Value, int32(1))
 }
